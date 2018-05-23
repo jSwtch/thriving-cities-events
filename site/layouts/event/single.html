@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<h1>This is an Event page</h1>
+<h1>This event is called {{ .Title }}</h1>
+<h1>This is on  {{ .Date.Format "Mon, 2 Jan, 2006" }}</h1>
+<h1>This is from  {{ .Params.startTime }} - {{ .Params.endTime }}</h1>
+<h1>{{ .Date.Month }}</h1>
+<h1>{{ .Date.Day }}</h1>
+<p>{{ .Description }}</p>
+  
+  
+{{end}}
