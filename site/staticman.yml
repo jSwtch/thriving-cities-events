@@ -11,7 +11,7 @@ comments:
 
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted.
-  allowedOrigins: ["localhost", "hugo.staticman.net"]
+  allowedOrigins: ["localhost", "heuristic-lalande-8c9f8f.netlify.com"]
 
   # (*) REQUIRED
   #
@@ -37,7 +37,7 @@ comments:
   moderation: true
 
   # Name of the site. Used in notification emails.
-  name: "Hugo + Staticman"
+  name: "Thriving Cities Events"
 
   # (*) REQUIRED
   #
@@ -60,7 +60,7 @@ comments:
 
 posts:
   allowedFields: ["title", "body"]
-  allowedOrigins: ["localhost", "hugo.staticman.net"]
+  allowedOrigins: ["localhost", "heuristic-lalande-8c9f8f.netlify.com"]
   branch: "master"
   generatedFields:
     date:
@@ -72,7 +72,7 @@ posts:
     tags: ["user-generated"]
   format: "frontmatter"
   moderation: true
-  name: "Hugo + Staticman"
+  name: "Thriving Cities Events"
   path: "content/post"
   filename: "{fields.slug}"
   requiredFields: ["title", "body"]
