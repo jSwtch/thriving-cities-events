@@ -58,23 +58,28 @@ comments:
   transforms:
     email: md5
 
-posts:
-  allowedFields: ["title", "body"]
+comments:
+  allowedFields: ["name", "email", "url", "message","replying_to"]
   allowedOrigins: ["localhost", "heuristic-lalande-8c9f8f.netlify.com"]
   branch: "master"
+  commitMessage: "Add Staticman data"
+  filename: "entry{@timestamp}"
+  format: "yaml"
   generatedFields:
     date:
       type: date
-    slug:
-      type: slugify
       options:
-        field: title
-    tags: ["user-generated"]
-  format: "frontmatter"
+        format: "timestamp-seconds"
   moderation: true
-  name: "Thriving Cities Events"
-  path: "content/post"
-  filename: "{fields.slug}"
-  requiredFields: ["title", "body"]
+  name: "Thriving Cities"
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["name", "email", "message"]
   transforms:
-    body: "frontmatterContent"
+    email: md5
+
+# reCaptcha:
+#   enable: true
+#   siteKey: "6LeafVcUAAAAAFQJMObMNm7pHbJE2ApFbeklTT51"
+#   secret: "6LeafVcUAAAAAB4ZapmtLZSl7HsDxfAB-NBu7ySf"
+
+
