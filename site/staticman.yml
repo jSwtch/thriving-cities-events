@@ -59,7 +59,7 @@ comments:
     email: md5
 
 comments:
-  allowedFields: ["name", "email", "url", "message","replying_to"]
+  allowedFields: ["name", "email", "message"]
   allowedOrigins: ["localhost", "heuristic-lalande-8c9f8f.netlify.com"]
   branch: "master"
   commitMessage: "Add Staticman data"
@@ -77,9 +77,6 @@ comments:
   transforms:
     email: md5
 
-# reCaptcha:
-#   enable: true
-#   siteKey: "6LeafVcUAAAAAFQJMObMNm7pHbJE2ApFbeklTT51"
-#   secret: "6LeafVcUAAAAAB4ZapmtLZSl7HsDxfAB-NBu7ySf"
+
 
 
