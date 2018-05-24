@@ -1,6 +1,6 @@
 comments:
-  allowedFields: ["name", "email", "message"]
-  allowedOrigins: ["localhost", "heuristic-lalande-8c9f8f.netlify.com"]
+  allowedFields: ["name", "email", "url", "message","replying_to"]
+  allowedOrigins: ["localhost", "artipedia.site"]
   branch: "master"
   commitMessage: "Add Staticman data"
   filename: "entry{@timestamp}"
@@ -11,12 +11,13 @@ comments:
       options:
         format: "timestamp-seconds"
   moderation: true
-  name: "Thriving Cities"
+  name: "artipedia.site"
   path: "_data/comments/{options.slug}"
   requiredFields: ["name", "email", "message"]
   transforms:
     email: md5
 
-
-
-
+reCaptcha:
+  enable: true
+  siteKey: "6LeafVcUAAAAAFQJMObMNm7pHbJE2ApFbeklTT51"
+  secret: "6LeafVcUAAAAAB4ZapmtLZSl7HsDxfAB-NBu7ySf"
