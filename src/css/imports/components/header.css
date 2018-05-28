@@ -1,0 +1,122 @@
+/* 
+NAV
+*/
+.header {
+  width: 100%;  
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  background: var(--color-primary);
+}
+.header span {
+  grid-row: 1;
+  display: flex;
+  align-items: center;  
+}
+.header span .logo {
+  display: block;
+  height: 42px;
+}
+@media (--md-view) {
+  .header span .logo {@mixin fluidcalc height, 1px, 42, 82, 420, 1024;}
+}
+@media (--lg-view) {
+  .header span .logo {
+    height: 82px;
+  }
+}
+.header span h4 {
+  color: var(--color-light);
+  padding: 0;
+  padding-left: 2ch;
+  margin: 0;
+}
+.header input {
+	position: absolute;
+	left:-999em;
+}
+.header label {
+  grid-row: 1;
+  color: var(--color-light);
+  align-self: center;
+  justify-self: end;
+  margin: 0;
+  margin-right: 5vw;
+}
+.header ul {
+  padding: 0 .2em 0 0;
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;  
+  grid-row: 1;
+    @media (max-width: 760px) {
+    grid-row: 2;
+    grid-column: 2;
+    padding: 0;
+    justify-self: end;
+    }
+}
+.header ul li {
+    @media (max-width: 760px) {
+    }
+}
+.header ul li .h4 {
+  color: var(--color-light);
+}
+
+@media (max-width: 760px) {
+  .header ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;  
+  }
+  .header ul li {
+    padding: .35em 0;
+    text-align: right;
+    margin-right: 5vw;
+  }
+  .header ul li:last-child {
+    padding-bottom: .8em;
+  }
+	#mainMenu {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 0;
+    opacity: 0;
+    max-height: 0px;
+    transition: max-height .35s ease-in, opacity .25s ease-in;
+  }
+	#menuShowHide + label {
+	}
+	#menuShowHide + label:active,
+	#menuShowHide + label:focus,
+	#menuShowHide + label:hover {
+  }
+  
+  #menuShowHide:not(:checked) + label:before {
+    content:"\21AA";
+    display: inline-block;
+    transition: transform .18s ease-in;
+    transition-delay: .01s;
+  }
+  #menuShowHide:not(:checked) + label:after {
+    content:"Menu";
+  }
+	#menuShowHide:checked + label:before {
+    content:"\21A9";
+    display: inline-block;
+    transform: rotate(120deg);  
+    transition: transform .18s ease-in-out;
+  }
+  #menuShowHide:checked + label:after {
+    content:"Hide";
+  }  
+	#menuShowHide:checked ~ #mainMenu {
+    height: auto;
+    opacity: 1;
+    max-height: 120px;
+    transition: max-height .3s ease-in-out, opacity .5s ease-in-out;
+	}
+}

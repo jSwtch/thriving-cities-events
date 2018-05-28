@@ -1,14 +1,45 @@
-/*
-  You can use import statements to include partials:
- */
+
 @import "imports/reset.css";
+@import "imports/mixins.css";
+@import "imports/fonts.css";
+@import "imports/components/header.css";
 
+:root {
+  /* FONTS */
+  --font-sans: 'Poppins', 'Palatino', sans-serif;
+  --font-serif: 'Libre Baskerville', 'Georgia', serif;
+  /* --font-sans: 'Montserrat', 'Palatino', sans-serif;
+  --font-serif: 'Arvo', 'Georgia', serif; */
 
-/*
-  Or add your statements here:
- */
-body{
-  font-family: sans-serif;
-  font-size: 1em;
-  text-align: center;
+  /* COLORS EXISTING SITE*/
+  --color-white: #FFFFFF;
+  --color-grey:#E6E7E8;
+  --color-red:#B74144;
+  --color-blue:#315B92;
+  --color-green:#7B9540;
+  --color-turq:#5AB5D5;
+  --color-yellow:#E5B122;
+  --color-purple:#7E4098;
+
+  /* COLORS NEW THEME*/
+  --color-darkpurple:#191019;
+  --color-orange1:#EB5F0C;
+  --color-orange2:#F09758;
+  --color-orange3:#F4CEA4;
+
+  /* COLORS MEMPHIS THEME*/
+  --color-red:#CC0000;
+  --color-blue:#002D65;
+
+  /*THEME 1*/
+  --color-primary: #191019;
+  --color-light: #E6E7E8;
 }
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+

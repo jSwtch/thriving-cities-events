@@ -1,0 +1,13 @@
+@custom-media --md-view (min-width: 26.25em);
+@custom-media --lg-view (min-width: 64em);
+
+@define-mixin fluidtype $font-min, $font-max, $screen-min, $screen-max {
+  font-size: calc($font-min*1em + ($font-max - $font-min)*(100vw -$screen-min*1em)/($screen-max - $screen-min));
+}
+/* @define-mixin fluidcalc $unit, $calc-min, $calc-max, $screen-min, $screen-max {
+  height: calc($calc-min*$unit + ($calc-max - $calc-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+} */
+
+@define-mixin fluidcalc $property, $unit, $calc-min, $calc-max, $screen-min, $screen-max {
+  $(property): calc($calc-min*$unit + ($calc-max - $calc-min)*(100vw -$screen-min*$unit)/($screen-max - $screen-min));
+}

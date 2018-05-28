@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Thriving Cities Events"
+title = "Events | Thriving Cities"
 buildFuture = true
 
 # RSS, categories and tags disabled for an easy start
