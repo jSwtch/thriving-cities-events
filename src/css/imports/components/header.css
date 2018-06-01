@@ -13,6 +13,9 @@ NAV
   display: flex;
   align-items: center;  
 }
+@media (--md-view) {
+  .header span {@mixin fluidcalc margin-left, 1em, 0.2, 4, 26.25, 64;}
+}
 .header span .logo {
   display: block;
   height: 42px;
@@ -60,6 +63,20 @@ NAV
     @media (max-width: 760px) {
     }
 }
+
+.header ul li:last-child {
+	background-image: -webkit-linear-gradient(30deg, var(--color-primary-color1),var(--color-primary-color2));
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .8;
+  transition: opacity .3s ease;
+}
+
+.header ul li:last-child:hover {
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
 .header ul li .h4 {
   color: var(--color-light);
 }

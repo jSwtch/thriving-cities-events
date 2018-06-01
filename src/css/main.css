@@ -1,45 +1,87 @@
-
 @import "imports/reset.css";
 @import "imports/mixins.css";
 @import "imports/fonts.css";
 @import "imports/components/header.css";
-
+@import "imports/components/above-fold.css";
+@import "imports/components/home-intro.css";
+@import "imports/components/event-card.css";
+@import "imports/components/event-single.css";
+@import "imports/components/footer.css";
 :root {
   /* FONTS */
   --font-sans: 'Poppins', 'Palatino', sans-serif;
   --font-serif: 'Libre Baskerville', 'Georgia', serif;
   /* --font-sans: 'Montserrat', 'Palatino', sans-serif;
   --font-serif: 'Arvo', 'Georgia', serif; */
-
   /* COLORS EXISTING SITE*/
   --color-white: #FFFFFF;
-  --color-grey:#E6E7E8;
-  --color-red:#B74144;
-  --color-blue:#315B92;
-  --color-green:#7B9540;
-  --color-turq:#5AB5D5;
-  --color-yellow:#E5B122;
-  --color-purple:#7E4098;
-
+  --color-grey: #E6E7E8;
+  --color-red: #B74144;
+  --color-blue: #315B92;
+  --color-green: #7B9540;
+  --color-turq: #5AB5D5;
+  --color-yellow: #E5B122;
+  --color-purple: #7E4098;
   /* COLORS NEW THEME*/
-  --color-darkpurple:#191019;
-  --color-orange1:#EB5F0C;
-  --color-orange2:#F09758;
-  --color-orange3:#F4CEA4;
-
+  --color-darkpurple: #191019;
+  --color-orange1: #EB5F0C;
+  --color-orange2: #F09758;
+  --color-orange3: #F4CEA4;
   /* COLORS MEMPHIS THEME*/
-  --color-red:#CC0000;
-  --color-blue:#002D65;
-
+  --color-red: #CC0000;
+  --color-blue: #002D65;
   /*THEME 1*/
   --color-primary: #191019;
+  --color-primary-triplet: 25, 16, 25;
   --color-light: #E6E7E8;
+  --color-primary-color1: #F4CEA4;
+  --color-primary-color2: #F09758;
+  --color-primary-color3: #EB5F0C;
+  --color-primary-logo: #E6B223;
+  --color-primary-purple: #802060;
+  --color-primary-darkteal: #447087;
+  --color-primary-greygreen: #d0d3ca;
 }
 
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
 
+/* 
+GRID DEMO
+ */
+
+.gridtest {
+  display: grid;
+  grid-template-columns: 3.2% repeat(12, 1fr) 3.2%;
+  grid-column-gap: 1.8%;
+}
+
+.tst {
+  grid-row: 1;
+  background: var(--color-primary-logo);
+  height: 40px;
+}
+
+.tst:nth-of-type(2n) {
+  background: var(--color-primary-color2);
+}
+
+.tst:last-of-type,
+.tst:first-of-type {
+  background: var(--color-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3.2% repeat(12, 1fr) 3.2%;
+  grid-column-gap: 1.8%;
+}
+
+.about {
+  margin: 0 6.4% 3.2em 6.4%;
+}

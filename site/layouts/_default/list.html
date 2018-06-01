@@ -1,9 +1,7 @@
 {{ define "main" }}
 
-<section id="events" class="grid">
-
-    <h2>Latest Events</h2>
-    
+<div class="wrapper">
+    {{ range where .Site.Pages "Params.type" "event" }}
     <div class="event-card">
         <section class="card-image">
           <a href="{{.URL}}"><img src="./img/{{ .Params.img }}.jpg" alt=""></a>
@@ -20,14 +18,11 @@
         </section>
         <section class="card-post">
           <a href="{{.URL}}"><span class="title">{{.Title}}</span></a>
-          <p class="card-post--content">{{ .Params.description | safeHTML | truncate 100 }}</p>
-          <a href="{{.URL}}"><button class="button">Get Involved</button></a>
-        </section>
-        <section class="content">
-            {{ .Content }}
+          <p class="card-post--content">{{ .Params.description | safeHTML | truncate 200 }}</p>
+          <a href="{{.URL}}"><button class="button">Read More</button></a>
         </section>
       </div>
-  
-  </section>
-  
+    {{end}}
+    
+</div>
 {{end}}

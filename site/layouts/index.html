@@ -1,20 +1,17 @@
 {{ define "main" }}
 
+<picture class="thriveMemphis-hero-img">
+    <source media="(min-width: 1248px)" srcset="./img/thriveMemphis941440.jpg">
+    <source media="(min-width: 960px)" srcset="./img/thriveMemphis1691248.jpg">
+    <source media="(min-width: 760px)" srcset="./img/thriveMemphis32960.jpg">
+    <source media="(min-width: 580px)" srcset="./img/thriveMemphis76760.jpg">
+    <source media="(min-width: 420px)" srcset="./img/thriveMemphis67580.jpg">
+    <img  src="./img/thriveMemphis23420.jpg" alt="">
+</picture>
 
+<div class="wrapper">    
+    {{ partial "home-intro" . }}
+    {{ partial "event-list" . }}      
+</div>
 
- <h1>THIS IS THE H1</h1>
- <h2>TESTH2</h2>
- <h3>TESTH3</h3>
- <h4>TESTH4</h4>
-<small>Testing SMALL</small>
-
-<p>Lorem ipsum dolor sit amet, pro in solum option deleniti, legere saperet an sea, quo cu tale dicam. Vis ei viris labitur, cum sonet detracto et. Duo ex affert appellantur. Ut eum semper eligendi tacimates, pro eu alii numquam. Vidit splendide cu sea, ferri eruditi molestiae eu sit, mei te hinc reformidans.
-</p>
-
-<ul>
-  {{ range .Pages }}
-    <li><a href="{{.URL}}">{{.Title}}</a></li>
-  {{end}}
-  </ul>
-  
   {{end}}

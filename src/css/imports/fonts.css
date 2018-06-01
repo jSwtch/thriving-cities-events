@@ -5,7 +5,7 @@ body {
   line-height: 1.45;
 }
 
-p, .p {
+p, .p, section ul li {
   font-size: 1em;
   margin-bottom: 1em;
   font-family: var(--font-serif);
@@ -16,7 +16,7 @@ h1, h2, h3, h4,
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
-  font-family:var(--font-sans);
+  font-family: var(--font-sans);
 }
 
 h1, .h1 {
@@ -25,22 +25,28 @@ h1, .h1 {
 }
 h2, .h2 {font-size: 1.424em;}
 h3, .h3 {font-size: 1.266em;}
+.title {font-size: 1.266em;}
 h4, .h4 {font-size: 1.125em;}
 small, .font_small {font-size: 0.889em;}
+section ul li {
+  list-style-type: disc;
+}
 
 @media (--md-view) {
-  h1, .h1 {@mixin fluidtype 1.602, 3.157, 26.25, 64;}
-  h2, .h2 {@mixin fluidtype 1.424, 2.369, 26.25, 64;}
-  h3, .h3 {@mixin fluidtype 1.266, 1.777, 26.25, 64;}
-  h4, .h4 {@mixin fluidtype 1.125, 1.333, 26.25, 64;}
-  p, .p {@mixin fluidtype 1, 1.3, 26.25, 64;}
-  small {@mixin fluidtype 0.889, 0.75, 26.25, 64;}
+  h1, .h1 {@mixin fluidcalc font-size, 1em, 1.602, 3.157, 26.25, 64;}
+  h2, .h2 {@mixin fluidcalc font-size, 1em, 1.424, 2.369, 26.25, 64;}
+  h3, .h3 {@mixin fluidcalc font-size, 1em, 1.266, 1.777, 26.25, 64;}
+  .title {@mixin fluidcalc font-size, 1em, 1.266, 1.777, 26.25, 64;}
+  h4, .h4 {@mixin fluidcalc font-size, 1em, 1.125, 1.333, 26.25, 64;}
+  p, .p, section ul li {@mixin fluidcalc font-size, 1em, 1, 1.3, 26.25, 64;}
+  small {@mixin fluidcalc font-size, 0.889, 0.75, 26.25, 64;}
 }
 @media (--lg-view) {
   h1, .h1 {font-size: 3.157em;}
   h2, .h2 {font-size: 2.369em;}
   h3, .h3 {font-size: 1.777em;}
+  .title {font-size: 1.777em;}
   h4, .h4 {font-size: 1.333em;}
-  p, .p {font-size: 1.3em;}
+  p, .p, section ul li {font-size: 1.3em;}
   small, .font_small {font-size: 0.75em;}
 }
