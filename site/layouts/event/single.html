@@ -8,6 +8,8 @@
         <img src="./img/{{ .Params.img }}.jpg" alt="">
       </a>
     </section>
+    
+
     <section class="card-details">
       <div class="card-details--date">
         <span class="date--day">{{ .Date.Format "2" }}</span>
@@ -18,6 +20,8 @@
         <span>{{ .Params.startTime }} - {{ .Params.endTime }}</span>
       </div>
     </section>
+
+    
     <section class="card-post">
       <a href="{{.URL}}">
         <span class="title">{{.Title}}</span>
@@ -35,3 +39,6 @@
 </section>
 
 {{end}}
+
+
+
