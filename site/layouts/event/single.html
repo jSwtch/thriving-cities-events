@@ -2,32 +2,36 @@
 
 <section id="events" class="grid">
 
-    <h2>Latest Events</h2>
-    
-    <div class="event-card">
-        <section class="card-image">
-          <a href="{{.URL}}"><img src="./img/{{ .Params.img }}.jpg" alt=""></a>
-        </section>
-        <section class="card-details">
-          <div class="card-details--date">
-            <span class="date--day">{{ .Date.Format "2" }}</span>
-            <span class="date--month">{{ .Date.Format "Jan" }}</span>
-          </div>
-          <div class="card-details--actions">
-            <span>Share</span>    
-            <span>{{ .Params.startTime }} - {{ .Params.endTime }}</span>
-          </div>
-        </section>
-        <section class="card-post">
-          <a href="{{.URL}}"><span class="title">{{.Title}}</span></a>
-          <p class="card-post--content">{{ .Params.description | safeHTML | truncate 100 }}</p>
-          <a href="{{.URL}}"><button class="button">Get Involved</button></a>
-        </section>
-        <section class="content">
-            {{ .Content }}
-        </section>
+  <div class="event-card">
+    <section class="card-image">
+      <a href="{{.URL}}">
+        <img src="./img/{{ .Params.img }}.jpg" alt="">
+      </a>
+    </section>
+    <section class="card-details">
+      <div class="card-details--date">
+        <span class="date--day">{{ .Date.Format "2" }}</span>
+        <span class="date--month">{{ .Date.Format "Jan" }}</span>
       </div>
-  
-  </section>
-  
+      <div class="card-details--actions">
+        <span>Share</span>
+        <span>{{ .Params.startTime }} - {{ .Params.endTime }}</span>
+      </div>
+    </section>
+    <section class="card-post">
+      <a href="{{.URL}}">
+        <span class="title">{{.Title}}</span>
+      </a>
+      <p class="card-post--content">{{ .Params.description | safeHTML | truncate 100 }}</p>
+      <a href="{{.URL}}">
+        <button class="button">Get Involved</button>
+      </a>
+    </section>
+    <section class="content">
+      {{ .Content }}
+    </section>
+  </div>
+
+</section>
+
 {{end}}
