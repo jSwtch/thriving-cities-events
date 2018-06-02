@@ -1,11 +1,10 @@
 .video-bg {
   width: 100%;
-  background: #000;
 }
 
 .video-embed {
-  max-width: 1024px;
-  margin: 0.707em auto;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .vplayer {
