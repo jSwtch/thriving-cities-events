@@ -6,6 +6,7 @@
 @import "imports/components/home-intro.css";
 @import "imports/components/event-card.css";
 @import "imports/components/event-single.css";
+@import "imports/components/youtube-embed.css";
 @import "imports/components/footer.css";
 :root {
   /* FONTS */

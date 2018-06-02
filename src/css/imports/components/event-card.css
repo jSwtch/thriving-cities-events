@@ -16,6 +16,7 @@
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.31);
   transition: all .3s ease;
 }
+
 .event-card:hover {
   transform: scale(1.005);
 }
@@ -26,36 +27,41 @@
 }
 
 .card-image img {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 .card-date {
   position: absolute;
-  min-width: 7%; 
+  min-width: 7%;
   cursor: pointer;
   transition: all .2s ease;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.31);
 }
+
 .card-date a {
   display: flex;
-  min-width: 7%; 
+  min-width: 7%;
   flex-direction: column;
   text-align: center;
 }
+
 .card-date:hover {
   transform: scale(1.04);
 }
+
 .card-date--day {
   width: 100%;
   background: var(--color-light);
   color: var(--color-primary);
 }
+
 .card-date--month {
   width: 100%;
   background: var(--color-primary);
   color: var(--color-light);
 }
+
 .card-post {
   grid-row: 1 / span 2;
   grid-column: 7 / span 5;

@@ -2,33 +2,29 @@
 
 <section id="events" class="grid">
 
-  <div class="event-card">
-    <section class="card-image">
-      <a href="{{.URL}}">
-        <img src="./img/{{ .Params.img }}.jpg" alt="">
-      </a>
-    </section>    
+  <div class="event-single">
 
-    <section class="card-details">
-      <div class="card-details--date">
-        <span class="date--day">{{ .Date.Format "2" }}</span>
-        <span class="date--month">{{ .Date.Format "Jan" }}</span>
-      </div>
-      <div class="card-details--actions">
-        <span>Share</span>
-        <span>{{ .Params.startTime }} - {{ .Params.endTime }}</span>
-      </div>
+    <section class="event-image">
+      <img src="./img/{{ .Params.img }}.jpg" alt="">
     </section>
-    
-    <section class="card-post">
-      <a href="{{.URL}}">
-        <span class="title">{{.Title}}</span>
+
+    <section class="event-date">
+      <span class="card-date--day">{{ .Date.Format "2" }}</span>
+      <span class="card-date--month">{{ .Date.Format "Jan" }}</span>
+    </section>
+
+    <section class="event-post">
+      <a href="{{.URL}}"></a>
+      <span class="title">{{.Title}}</span>
       </a>
+      <br>
+      <span>{{ .Params.startTime }} - {{ .Params.endTime }}</span>
       <p class="card-post--content">{{ .Params.description | safeHTML | truncate 100 }}</p>
       <a href="{{.URL}}">
-        <button class="button">Get Involved</button>
+        <button class="button">Sign Up</button>
       </a>
     </section>
+
     <section class="content">
       {{ .Content }}
     </section>
@@ -37,6 +33,3 @@
 </section>
 
 {{end}}
-
-
-
