@@ -32,6 +32,8 @@
   --color-red: #CC0000;
   --color-blue: #002D65;
   /*THEME 1*/
+  --font-sans: 'Poppins', 'Palatino', sans-serif;
+  --font-serif: 'Libre Baskerville', 'Georgia', serif;
   --color-primary: #191019;
   --color-primary-triplet: 25, 16, 25;
   --color-light: #E6E7E8;
@@ -61,6 +63,7 @@ ul {
 .button {
   font-family: var(--font-sans);
   margin: 0 auto;
+  margin-bottom: 1.2em;
   display: block;
   font-size: 1.125em;
   color: var(--color-light);
@@ -86,3 +89,5 @@ ul {
   display: block;
   max-width: 100%;
 }
+
+@media screen and (min-width: 1220px) {}

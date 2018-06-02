@@ -1,8 +1,8 @@
 ---
 title: Ad obsessae Argos refers signa
 date: "2018-05-24"
-startTime: "2:00 PM"
-endTime: "1:00 PM"
+startTime: "2:00pm"
+endTime: "1:00pm"
 description: "Lorem markdownum vides. Nocte si dedit, quaeris purasque corpus. Tela fallat
 est: dixit adflat, Phoronidos squalidus. Per mihi dederat Sidonida officio,
 natus saxa moriente dantem sano ille faciat languescuntque amat, corpora
@@ -28,18 +28,18 @@ Inque furialibus fecerat. Eat crede amori antro simillimus scilicet
 ## Perdix memorique vasta amantem forem pondere spumis
 
 Pergama tetigere Schoeneia Maeonios scopulum corpus abire minimamque lacertis
-edidit nihil Leucippusque glaebas lata concita propior. *A ferens* hoc.
+edidit nihil Leucippusque glaebas lata concita propior. _A ferens_ hoc.
 
-- Mihi non ante
-- Ad sororem fronte
-- Sorsque humanaeve dederat Iliaden vigor
-- Pater extremos sensit in vincis gurges
-- Arma refert mollis Phaethontis edere
+* Mihi non ante
+* Ad sororem fronte
+* Sorsque humanaeve dederat Iliaden vigor
+* Pater extremos sensit in vincis gurges
+* Arma refert mollis Phaethontis edere
 
 ## Semiramis digitos sinunt sed per qua amans
 
-At quisque nimium; et mediis socii cogor infelix se pavidam crate *eras
-quondam*. Sanguine sanguine vincet maris, tuam, Semiramio fuit causam *moenia*
+At quisque nimium; et mediis socii cogor infelix se pavidam crate _eras
+quondam_. Sanguine sanguine vincet maris, tuam, Semiramio fuit causam _moenia_
 fratrisque, facis, [suaque ordine](http://www.fit.org/estotumulatus.html) magna
 patefecit, sagitta. Inposuere **fatum quid** ille te atque. Quoque amor mixtus
 dies decursus lacrimasque me dente et sed tamen arcum generi annis, fatali.
@@ -59,5 +59,5 @@ vestro dataque, viri Cypro radiorum nec meliore!
     var overwrite_jpeg = ribbon * tftpTweak + ddrCard;
 
 Amissam senex opis quem, pertimuit admoveam; sum si. Res omnibus orbem
-corripuere *bellum aures* dedisset; confundimur magni trabem imperat hoc veterum
+corripuere _bellum aures_ dedisset; confundimur magni trabem imperat hoc veterum
 terga dum, hic.

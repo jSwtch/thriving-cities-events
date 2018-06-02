@@ -22,6 +22,8 @@
         <span class="title">{{.Title}}</span>
       </a>
       <br>
+      <span>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
+      <br class="card-post--break">
       <span>{{ .Params.startTime }} - {{ .Params.endTime }}</span>
       <p class="card-post--content">{{ .Params.description | safeHTML | truncate 100 }}</p>
       <a href="{{.URL}}">

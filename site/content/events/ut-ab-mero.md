@@ -1,8 +1,8 @@
 ---
 title: Ut ab mero parte
 date: "2018-05-24"
-startTime: "2:00 PM"
-endTime: "1:00 PM"
+startTime: "2:00pm"
+endTime: "1:00pm"
 description: "Lorem markdownum nec intendensque *imagine*, excute habitantem pati fameque,
 superum. Illic et medio dempsistis quas fugaeque positum vacuaque defossos dum
 pars nymphae spe agri tellus nec spreto. Refugerit pedibusque decipit more est.
@@ -16,7 +16,7 @@ type: event
 
 ## Nati volucrum figuram ardua
 
-Lorem markdownum nec intendensque *imagine*, excute habitantem pati fameque,
+Lorem markdownum nec intendensque _imagine_, excute habitantem pati fameque,
 superum. Illic et medio dempsistis quas fugaeque positum vacuaque defossos dum
 pars nymphae spe agri tellus nec spreto. Refugerit pedibusque decipit more est.
 Vestibus sanguis tractu ungulaque et sub venerat carinae bella nostro onus
@@ -30,7 +30,7 @@ contigit letifera, vitaque nomen.
 ## Dum quid
 
 Trahenti Curibus est commune vibrant bis [per superbia](http://auxiliaribus.io/)
-litus *frementis* ore Aegyptia vultus in **obscenas loqui**. Nymphen generi
+litus _frementis_ ore Aegyptia vultus in **obscenas loqui**. Nymphen generi
 numinis [terra cicatrix vocari](http://soleo-dilectus.com/artus-vis), et pro
 Ausoniae plus; deus Phoebes surgit, lusibus, referat. Amor opis Lacinia,
 [carmine](http://sua.com/insulabrevis) occupat, quae ipse atria vulnera?
@@ -52,7 +52,7 @@ habet opem diris Polydorus hostiliter liber!
 
 ## Iussi deducit
 
-Concita *torum*! Tunc tamen, in ego similis contraria velle in tollere
+Concita _torum_! Tunc tamen, in ego similis contraria velle in tollere
 generosior pereat aptos tonarent simul tumefactum scilicet inmitem. Nyctimenen
 sunto quoque dubitabilis vestibus; arator et reduxi cortice cur, **pia dextra**
 arma, quod. Mersit iuvat formamque Echidnae qui edidit ex ora et Syrtis, corve,
@@ -62,8 +62,8 @@ Broteasque o.
 
 ## Ante nescia
 
-Diversa sceleris carnes? Aut mihi in *illa* decent, et sanguinea fatebar:
-victus, sed caput at *petebat Aegeus* nigrum, haec. Nova distantibus ignis, de
+Diversa sceleris carnes? Aut mihi in _illa_ decent, et sanguinea fatebar:
+victus, sed caput at _petebat Aegeus_ nigrum, haec. Nova distantibus ignis, de
 quid aures, dum saevarum, vile.
 
 Adsum inpulerat non tela reconditus [est tua lacerare](http://venitfleturi.com/)
