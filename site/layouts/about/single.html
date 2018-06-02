@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="wrapper">
-  <section class="body-content">
+  <section class="body-content about-page">
     <h2>About this submission</h2>
     <section>
       <p>
@@ -22,7 +22,16 @@
       <h3>Site performance</h3>
       <p>This site is super fast! I like to use
         <a href="https://gtmetrix.com/">GTMetrix</a> for performance ratings, you can analyze any URL for comparision. The image shown here is a summary
-        of the results.</p>
+        of the results. There are two reasons for the relatively low YSlow score: the first is that GTMetrix doesn't currently
+        recognize the CDN we are using, and the second is that we have not yet added expiration dates to the static images
+        for a browser cache.</p>
+
+
+      <picture>
+        <source media="(min-width: 960px)" srcset="./img/gtmetrix-score.jpg">
+        <img src="./img/gtmetrix-score-mobile.jpg" alt="">
+      </picture>
+
     </section>
 
     <section>
@@ -77,9 +86,12 @@
           <li>Dynamic content on the static page: yes we can implement user comments on events, interactive quetion polls, and
             other neat features.</li>
           <li>Headless cms: we can create a super simple to use custom cms for your marketing team to add new events to the event
-            page. With this solution <strong>a new event could be created from a mobile device</strong>, that then triggers a redeployment
-            of the whole site. There would be no need for them to create markdown files.
+            page. With this solution
+            <strong>a new event could be created from a mobile device</strong>, that then triggers a redeployment of the whole site.
+            There would be no need for them to create markdown files.
           </li>
+          <li>Add cache for static images: adding expire headers to the static images will have a significant impact on reducing
+            page load time for repeated visitors.</li>
           <li>Further polish: if this proposal is accepted, we can spend some time on refinment of the site details.</li>
         </ul>
       </section>

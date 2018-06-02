@@ -44,47 +44,18 @@
   --color-primary-greygreen: #d0d3ca;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-/* 
-GRID DEMO
- */
-
-.gridtest {
-  display: grid;
-  grid-template-columns: 3.2% repeat(12, 1fr) 3.2%;
-  grid-column-gap: 1.8%;
-}
-
-.tst {
-  grid-row: 1;
-  background: var(--color-primary-logo);
-  height: 40px;
-}
-
-.tst:nth-of-type(2n) {
-  background: var(--color-primary-color2);
-}
-
-.tst:last-of-type,
-.tst:first-of-type {
-  background: var(--color-primary);
-}
-
 .grid {
   display: grid;
   grid-template-columns: 3.2% repeat(12, 1fr) 3.2%;
   grid-column-gap: 1.8%;
 }
 
-.body-content {
-  margin: 0 6.4% 3.2em 6.4%;
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .button {
@@ -105,4 +76,13 @@ GRID DEMO
 .button:hover {
   transform: scale(1.04);
   color: white;
+}
+
+.body-content {
+  margin: 0 6.4% 3.2em 6.4%;
+}
+
+.about-page img {
+  display: block;
+  max-width: 100%;
 }
