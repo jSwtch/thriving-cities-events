@@ -1,0 +1,7 @@
+<h2 class="grid-title">New Events</h2>
+
+  {{ range first 3 (where .Site.Pages "Params.type" "event") }}
+
+  {{ partial "event-card" . }}
+
+  {{end}}

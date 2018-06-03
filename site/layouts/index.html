@@ -1,17 +1,21 @@
 {{ define "main" }}
 
-<picture class="thriveMemphis-hero-img">
-    <source media="(min-width: 1248px)" srcset="./img/thriveMemphis941440.jpg">
-    <source media="(min-width: 960px)" srcset="./img/thriveMemphis1691248.jpg">
-    <source media="(min-width: 760px)" srcset="./img/thriveMemphis32960.jpg">
-    <source media="(min-width: 580px)" srcset="./img/thriveMemphis76760.jpg">
-    <source media="(min-width: 420px)" srcset="./img/thriveMemphis67580.jpg">
-    <img  src="./img/thriveMemphis23420.jpg" alt="">
-</picture>
-
-<div class="wrapper">    
-    {{ partial "home-intro" . }}
-    {{ partial "event-list" . }}      
+<div class="thriveMemphis-hero">
+    <picture class="thriveMemphis-hero-pic">
+        <source media="(min-width: 1248px)" srcset="./img/thriveMemphis941440.jpg">
+        <source media="(min-width: 960px)" srcset="./img/thriveMemphis1691248.jpg">
+        <source media="(min-width: 760px)" srcset="./img/thriveMemphis32960.jpg">
+        <source media="(min-width: 580px)" srcset="./img/thriveMemphis76760.jpg">
+        <source media="(min-width: 420px)" srcset="./img/thriveMemphis67580.jpg">
+        <img src="./img/thriveMemphis23420.jpg" alt="">
+    </picture>
+    <img class="thriveMemphis-hero-hex" src="./img/hexagon.png" alt="">
 </div>
 
-  {{end}}
+
+
+<div class="wrapper">
+    {{ partial "home-intro" . }} {{ partial "home-event-list" . }}
+</div>
+
+{{end}}

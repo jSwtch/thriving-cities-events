@@ -1,5 +1,29 @@
-.thriveMemphis-hero-img img {
+.thriveMemphis-hero {
+  position: relative;
+}
+
+.thriveMemphis-hero-pic img {
   display: block;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.thriveMemphis-hero-hex {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 20em;
+}
+
+@media (--md-view) {
+  .thriveMemphis-hero-hex {@mixin fluidcalc width, 1em, 20, 32, 26.25, 64;}
+}
+
+@media (--lg-view) {
+  .thriveMemphis-hero-hex {
+    width: 32em;
+  }
 }

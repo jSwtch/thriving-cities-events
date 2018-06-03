@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<section id="events" class="grid">
+<section id="events" class="wrapper">
 
   <div class="event-single">
 
@@ -14,13 +14,11 @@
     </section>
 
     <section class="event-post">
-      <a href="{{.URL}}"></a>
-      <span class="title">{{.Title}}</span>
-      </a>
+      <span class="title">{{.Title}}</span> 
       <br>
+      <span>{{ .Date.Format "January 2, 2006" }}</span>
       <span>{{ .Params.startTime }} - {{ .Params.endTime }}</span>
-      <p class="card-post--content">{{ .Params.description | safeHTML | truncate 100 }}</p>
-      <a href="{{.URL}}">
+      <a href="https://mailchimp.com/">
         <button class="button">Sign Up</button>
       </a>
     </section>

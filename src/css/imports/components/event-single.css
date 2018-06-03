@@ -2,28 +2,28 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 2%;
-  grid-column: 2 / span 12;
   position: relative;
-  margin: 0em 0 4em 0;
-  border: solid .1em var(--color-primary);
+  /* border: solid .1em var(--color-primary); */
   border-radius: .2em;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.51);
+  transition: all .3s ease;
 }
 
 .event-image {
   grid-row: 1;
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 12;
 }
 
 .event-image img {
   width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 .event-date {
   position: absolute;
   display: flex;
-  min-width: 7%;
+  min-width: 12%;
   flex-direction: column;
   text-align: center;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.31);
@@ -42,12 +42,83 @@
 }
 
 .event-post {
-  grid-row: 1 / span 2;
-  grid-column: 7 / span 5;
+  grid-column: 2 / span 10;
+  grid-row: 2;
   align-self: center;
+  font-family: var(--font-sans);
+  padding: 1.25em 0;
+}
+.event-post button {
+  margin: 1.25em;
 }
 
 .content {
   margin: 2em 0;
-  grid-column: 3 / span 8;
+  grid-column: 2 / span 10;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 580px) {
+  .event-single {
+    margin: 3.25%;
+    border: solid .1em var(--color-primary);
+  }
+  .event-post {
+    grid-column: 3 / span 8;
+    grid-row: 2;
+    align-self: center;
+    font-family: var(--font-sans);
+    padding-top: 1.25em;
+  }
+  .event-post--break {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  #events h2 {
+    grid-row: 1;
+    grid-column: 2 / span 12;
+    margin: 0.707em 0 0.5em;
+  }
+  .event-image {
+    grid-row: 1;
+    grid-column: 1 / span 5;
+  }
+  .event-image img {
+    display: block;
+    object-fit: contain;
+    width: 520px;
+  }
+  .event-date {
+    position: absolute;
+    min-width: 7%;
+    transition: all .2s ease;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.31);
+  }
+  .event-date a {
+    display: flex;
+    min-width: 7%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .card-date:hover {
+    transform: scale(1.04);
+  }
+  .card-date--day {
+    width: 100%;
+    background: var(--color-light);
+    color: var(--color-primary);
+  }
+  .event-date--month {
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--color-light);
+  }
+  .event-post {
+    grid-row: 1 / span 2;
+    grid-column: 7 / span 5;
+    align-self: center;
+    padding-bottom: 0;
+  }
 }

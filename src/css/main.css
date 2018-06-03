@@ -46,10 +46,20 @@
   --color-primary-greygreen: #d0d3ca;
 }
 
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 3.2% repeat(12, 1fr) 3.2%;
   grid-column-gap: 1.8%;
+}
+.grid-title {
+  grid-column: 1 / span 12;
+  margin-left: 3.2%;
 }
 
 a {
