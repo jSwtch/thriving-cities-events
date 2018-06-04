@@ -1,8 +1,4 @@
-
-
-#intro {
-  /* background: var(--color-light); */
-}
+#intro {}
 
 #intro h1 {
   grid-row: 1;
@@ -18,31 +14,53 @@
   padding: 0;
 }
 
+.video-thrive {
+  grid-row: 3;
+  grid-column: 1 /span 14;
+  align-self: start;
+  margin: 0;
+  padding: 0;
+}
+
 #intro .social-contact {
-  margin: 1.414em 0 0 0;
-  grid-row: 5;
+  grid-row: 4;
+  margin: 0 auto;
+  margin-bottom: 2em;
   grid-column: 2 /span 12;
+  text-align: center;
+  align-self: center;
+}
+
+.social-contact--nav {
+  margin: 0 auto;
+  padding: 0;
 }
 
 .social-contact--nav ul {
   padding: 0;
-  margin: 0;
-  width: 100%;
   display: flex;
-  align-items: flex-end;
   font-size: 1.333em;
-  font-family: var(--font-sans);
 }
 
 .social-contact--nav ul li {
-  display: flex;
-  align-items: center;
+  list-style: none;
+  margin: 0 auto;
 }
 
 .social-icon {
   width: 2.369em;
-  margin-left: 1em;
+  fill: var(--color-primary);
+  transition: fill .3s ease;
+}
+
+.social-icon:hover,
+.social-icon:active {
   fill: url(#linear);
+}
+
+#intro .get-involved {
+  grid-column: 1 /span 14;
+  grid-column: 5;
 }
 
 .get-involved h2 {
@@ -57,24 +75,35 @@
   grid-column: 2 /span 12;
 }
 
-#intro .get-involved {
-  grid-column: 2 /span 12;
-}
-
 @media (--md-view) {
-  .button {
-    @mixin fluidcalc font-size,
-    1rem,
-    1.125,
-    1.333,
-    26.25,
-    64;
+  #intro .get-involved {
+    grid-column: 2 /span 12;
+  }
+  .video-thrive {
+    grid-column: 2 /span 12;
   }
 }
 
-@media (--lg-view) {
-  .button {
-    font-size: 1.333rem;
+@media screen and (min-width: 580px) {
+  #intro .background-info {
+    grid-row: 2;
+    grid-column: 2 /span 9;
+    align-self: start;
+    margin: 0;
+    padding: 0;
+  }
+  #intro .social-contact {
+    grid-row: 2;
+    grid-column: 11 /span 4;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .social-contact h2 {
+    display: none;
+  }
+  .social-contact--nav ul {
+    flex-direction: column;
   }
 }
 
@@ -84,22 +113,32 @@
     grid-column: 2 / span 12;
   }
   #intro .background-info {
-    grid-row: 2 / span 2;
-    grid-column: 2 /span 6;
+    grid-row: 2;
+    grid-column: 2 /span 7;
   }
   #intro .get-involved {
     grid-row: 2;
     grid-column: 9 /span 5;
-    justify-self: center;
     text-align: center;
+    margin-left: 3.2%;
+    margin-right: 3.2%;
   }
   #intro .social-contact {
+    margin-top: 0;
     grid-row: 3;
     grid-column: 9 /span 5;
-    justify-self: center;
     text-align: center;
   }
-  .get-involved h2 {}
-  .get-involved p {}
-  .get-involved form {}
+  .social-contact h2 {
+    display: block;
+  }
+  .social-contact--nav ul {
+    flex-direction: row;
+  }
+  .video-thrive {
+    grid-row: 3;
+    grid-column: 2 /span 7;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -3,6 +3,7 @@
 @import "imports/fonts.css";
 @import "imports/components/header.css";
 @import "imports/components/above-fold.css";
+@import "imports/components/mailchimp-homeform.css";
 @import "imports/components/home-intro.css";
 @import "imports/components/event-card.css";
 @import "imports/components/event-single.css";
@@ -46,7 +47,6 @@
   --color-primary-greygreen: #d0d3ca;
 }
 
-
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -57,6 +57,7 @@
   grid-template-columns: 3.2% repeat(12, 1fr) 3.2%;
   grid-column-gap: 1.8%;
 }
+
 .grid-title {
   grid-column: 1 / span 12;
   margin-left: 3.2%;
@@ -85,8 +86,26 @@ ul {
   cursor: pointer;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.31);
 }
+@media (--md-view) {
+  .button {
+    @mixin fluidcalc font-size, 1rem, 1.125, 1.333, 26.25, 64;
+  }
+}
+@media (--lg-view) {
+  .button {
+    font-size: 1.333rem;
+  }
+}
 
-.button:hover {
+
+.button--social {
+  display: block;
+  font-size: 1.125em;
+  transition: all 2s ease;
+  cursor: pointer;
+}
+
+.button:hover, .button--social:hover  {
   transform: scale(1.04);
   color: white;
 }
