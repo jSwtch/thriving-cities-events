@@ -1,29 +1,29 @@
 <div class="event-card">
 
-    <section class="card-image">
-      <a href="{{.URL}}">
-        <img src="./img/{{ .Params.img }}.jpg" alt="">
-      </a>
-    </section>
+  <section class="card-image">
+    <a href="{{.URL}}">
+      <img src="./img/{{ .Params.img }}.jpg" alt="">
+    </a>
+  </section>
 
-    <section class="card-date">
-      <a href="{{.URL}}">
-        <span class="card-date--day">{{ .Date.Format "2" }}</span>
-        <span class="card-date--month">{{ .Date.Format "Jan" }}</span>
-      </a>
-    </section>
+  <section class="card-date">
+    <a href="{{.URL}}">
+      <span class="card-date--day">{{ .Date.Format "2" }}</span>
+      <span class="card-date--month">{{ .Date.Format "Jan" }}</span>
+    </a>
+  </section>
 
-    <section class="card-post">
-      <a href="{{.URL}}">
-        <span class="title">{{.Title}}</span>
-      </a>
-      <br>
-      <span>{{ .Date.Format "January 2, 2006" }}</span>
-      <span>from {{ .Params.startTime }} - {{ .Params.endTime }}</span>
-      <p class="card-post--content">{{ .Params.description | safeHTML | truncate 100 }}</p>
-      <a href="{{.URL}}">
-        <button class="button">Read More</button>
-      </a>
-    </section>
+  <section class="card-post">
+    <a href="{{.URL}}">
+      <span class="title">{{.Title}}</span>
+    </a>
+    <br>
+    <span>{{ .Date.Format "January 2, 2006" }}</span>
+    <span>from {{ .Params.startTime }} - {{ .Params.endTime }}</span>
+    <p class="card-post--content">{{ .Params.description | safeHTML | truncate 100 }}</p>
+    <a href="{{.URL}}">
+      <button class="button">Read More</button>
+    </a>
+  </section>
 
-  </div>
+</div>
