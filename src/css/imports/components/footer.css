@@ -18,41 +18,10 @@
   margin-top: 2em;
 }
 
-@media (--md-view) {
-  .footer span {
-    @mixin fluidcalc margin-left,
-    1em,
-    0.2,
-    4,
-    26.25,
-    64;
-    grid-column: 1;
-    flex-direction: row;
-    text-align: left;
-  }
-}
-
 .footer span .logo {
   display: block;
   height: 82px;
   opacity: .65;
-}
-
-@media (--md-view) {
-  .footer span .logo {
-    @mixin fluidcalc height,
-    1px,
-    82,
-    164,
-    420,
-    1024;
-  }
-}
-
-@media (--lg-view) {
-  .footer span .logo {
-    height: 164px;
-  }
 }
 
 .footer span h3 {
@@ -97,6 +66,7 @@
   grid-column: 1 / span 2;
   color: white;
   opacity: .45;
+  margin-bottom: .2em;
 }
 
 .footer .details--address {
@@ -106,4 +76,44 @@
 .footer .details--copyright {
   grid-row: 4;
   opacity: .25;
+}
+
+@media (max-width: 760px) {
+  .footer ul {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    padding: 0;
+  }
+}
+
+@media (min-width: 580px) {
+  .footer span {
+    @mixin fluidcalc margin-left,
+    1em,
+    0.2,
+    4,
+    26.25,
+    64;
+    grid-column: 1;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+  }
+  .footer span .logo {
+    @mixin fluidcalc height,
+    1px,
+    82,
+    164,
+    420,
+    1024;
+  }
+  .footer .details {
+    max-width: 80%;
+  }
+}
+
+@media (--lg-view) {
+  .footer span .logo {
+    height: 164px;
+  }
 }
