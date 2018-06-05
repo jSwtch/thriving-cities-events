@@ -1,42 +1,60 @@
 .footer {
-  width: 100%;  
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: var(--color-primary);
   border-top: solid .4em transparent;
-  border-image: -webkit-linear-gradient(30deg, var(--color-primary-color1),var(--color-primary-color2),var(--color-primary-color2),var(--color-primary-color3),var(--color-primary-color2));
+  border-image: -webkit-linear-gradient(30deg, var(--color-primary-color1), var(--color-primary-color2), var(--color-primary-color2), var(--color-primary-color3), var(--color-primary-color2));
   border-image-slice: 1;
 }
+
 .footer span {
   grid-row: 1;
   grid-column: 1 / span 2;
   display: flex;
-  align-items: center;  
+  align-items: center;
   flex-direction: column;
   text-align: center;
   margin-top: 2em;
 }
+
 @media (--md-view) {
   .footer span {
-    @mixin fluidcalc margin-left, 1em, 0.2, 4, 26.25, 64;
+    @mixin fluidcalc margin-left,
+    1em,
+    0.2,
+    4,
+    26.25,
+    64;
     grid-column: 1;
     flex-direction: row;
     text-align: left;
   }
 }
+
 .footer span .logo {
   display: block;
   height: 82px;
   opacity: .65;
 }
+
 @media (--md-view) {
-  .footer span .logo {@mixin fluidcalc height, 1px, 82, 164, 420, 1024;}
+  .footer span .logo {
+    @mixin fluidcalc height,
+    1px,
+    82,
+    164,
+    420,
+    1024;
+  }
 }
+
 @media (--lg-view) {
   .footer span .logo {
     height: 164px;
   }
 }
+
 .footer span h3 {
   color: var(--color-light);
   padding: 0;
@@ -48,19 +66,19 @@
 .footer ul {
   padding: 0 .2em 0 0;
   display: flex;
-  justify-content: space-evenly; 
-  align-items: center;  
+  justify-content: space-evenly;
+  align-items: center;
   grid-row: 1;
-    @media (max-width: 760px) {
+  @media (max-width: 760px) {
     grid-row: 2;
     grid-column: 1 / span 2;
     padding: 0;
-    }
+  }
 }
 
 .footer ul li:last-child {
-	background-image: -webkit-linear-gradient(30deg, var(--color-primary-color1),var(--color-primary-color2));
-	-webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(30deg, var(--color-primary-color1), var(--color-primary-color2));
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: .8;
   transition: opacity .3s ease;
@@ -80,9 +98,11 @@
   color: white;
   opacity: .45;
 }
+
 .footer .details--address {
   grid-row: 3;
 }
+
 .footer .details--copyright {
   grid-row: 4;
   opacity: .25;
